@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, lively font */
+    margin: 0;
+    padding: 0;
+    color: #222; /* Dark text for readability */
+	 display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wider Main Content */
+main {
+    max-width: 900px; /* Adjust width to match the widest page */
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px red;
+    border-bottom: 5px solid  #b38f00;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+/* Different Backgrounds for Each Role */
+body.sheriff { background-color: #3498db; } /* Blue for Sheriff */
+body.doctor { background-color: #27ae60; } /* Green for Doctor */
+body.escort { background-color: #9b59b6; } /* Purple for Escort */
+body.vigilante { background-color: #e67e22; } /* Orange for Vigilante */
+body.cupid { background-color: #ff4d6d; } /* Pink for Cupid */
+body.godfather { background-color: #c0392b; } /* Dark Blue for Godfather */
+body.mafioso { background-color: #c0392b; } /* Red for Mafioso */
+body.jester { background-color: #f1c40f; } /* Yellow for Jester */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+	background:#001a33;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2px;
+    background: black;
+    color: white;
+    border-top: 5px solid #b38f00;
+    margin-top: auto; /* Pushes footer to the bottom */
+    position: relative;
+    width: 100%;
+}
+/* Role Card Style */
+.role-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+/* Text Effects */
+@keyframes glow {
+    0% { text-shadow: 2px 2px 5px black; }
+    50% { text-shadow: 4px 4px 8px white; }
+    100% { text-shadow: 2px 2px 5px black; }
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 28px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Jester Flashing Effect */
+@keyframes flash {
+    0%, 100% { color: red; }
+    50% { color: yellow; }
+}
+
+.jester {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+/* Fix Town and Mafia text colors */
+.town-text {
+    color: green;
+    font-weight: bold;
+}
+
+.mafia-text {
+    color: red;
+    font-weight: bold;
+}
+/* Flashing effect only for Jester title */
+
+
+.jester-title {
+    font-size: 32px;
+    font-weight: bold;
+    animation: flash 1s infinite alternate;
+}
+/* Different Colors for Roles in Index */
+/* Remove bullet points from role list */
+.role-list {
+    list-style-type: none; /* Removes dots */
+    padding: 0;
+    text-align: center;
+}
+
+/* Style for role links */
+.role-list a {
+    text-decoration: none; /* Removes underline */
+    font-size: 18px;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Different Colors for Roles */
+.town-role {
+    color: green;
+    font-weight: bold;
+}
+
+.mafia-role {
+    color: red;
+    font-weight: bold;
+}
+
+.neutral-role {
+    color: grey;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.role-list a:hover {
+    opacity: 0.8;
+    text-decoration: underline; /* Underline only on hover */
+}
+/* Brighter Mafia Text */
+.mafia-highlight {
+    color: #1aff1a; /* Bright red */
+    font-weight: bold;
+	animation: flash 10s infinite alternate;
+
+}
