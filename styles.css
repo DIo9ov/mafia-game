@@ -9,6 +9,16 @@ body {
     min-height: 100vh;
 }
 
+@media (max-width: 768px) { 
+    h1, h2 {
+        font-family: 'Arial Black', sans-serif; /* Use a clean, bold font */
+        font-size: 22px; /* Adjust size for smaller screens */
+    }
+
+    p, a {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Fredoka One', cursive;
+    }
+}
 /* Wider Main Content */
 main {
     max-width: 900px; /* Adjust width to match the widest page */
